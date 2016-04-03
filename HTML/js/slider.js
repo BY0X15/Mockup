@@ -27,7 +27,7 @@ function slidePage(obj, sl) {
   var ul = $(sl).find("ul.img");
   var bl = $(sl).find("li.slider"+obj);
   var step = $(bl).width();
-  $(ul).animate({marginLeft: "-"+step*obj}, 500);
+  $(ul).animate({marginLeft: "-"+step*obj}, { duration: 500, queue: false });
 }
 $(document).on("click", "#slider .controls li", function() {
   var sl = $(this).closest("#slider");
