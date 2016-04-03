@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>IDEATEL - Новый мобильный оператор связи</title>
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+  <script type="text/javascript" src="https://yastatic.net/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slider.js" defer></script>
+  <script type="text/javascript" src="js/topmenu.js" defer></script>
+  <script type="text/javascript" src="js/main.js" defer></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">IDEA<span>TEL</span></a>
+      <div class="topmenu">
+        <ul id="mobMenu">
+        </ul>
+        <ul id="topmenu">
+          <li>
+            Частным клиентам
+            <div class="dropmenu">
+              <div class="leftmenu">
+                <a href="#" class="active" id="mobileComm">Мобильная связь</a>
+                <a href="#" class="" id="mobileInternet">Мобильный интернет</a>
+                <a href="#" class="" id="homeInternet">Домашний интернет</a>
+                <a href="#" class="" id="rouming">Роуминг</a>
+              </div>
+              <div class="showmenu">
+                <div id="mobileCommMenu" style="display: block;">
+                  <a href="#" class="title">Тарифы</a>
+                  <div class="submenu">
+                    <a href="#">Выбрать тариф</a>
+                    <a href="#">Архив тарифов</a>
+                  </div>
+                  <br>
+                  <a href="#" class="title">Улуги</a>
+                  <div class="submenu">
+                    <a href="#">IDEA-Бонус</a>
+                    <a href="#">IDEA-Локатор</a>
+                    <a href="#">Управление звонками</a>
+                    <a href="#">Обмен сообщениями</a>
+                    <a href="#">Управление sim-картой и контактами</a>
+                  </div>
+                </div>
+                <div id="mobileInternetMenu" style="display: none;"></div>
+                <div id="homeInternetMenu" style="display: none;"></div>
+                <div id="roumingMenu" style="display: none;"></div>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </li>
+          <li>Корпоротивным клиентам</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="button privateCabinet">Личный кабинет</div>
+        <div class="phone">+375 15 975-21-20</div>
+        <div class="support">Онлайн поддержка</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="slider">
+      <div class="actions">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+      <ul class="img">
+        <li><img src="img/slider/sliderPage-1.png"></li>
+        <li><img src="img/slider/sliderPage-1.png"></li>
+        <li><img src="img/slider/sliderPage-1.png"></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="labels">
+        <a href="#" class="ourNet">Наша сеть</a>
+        <a href="#" class="dropMobNumber">Перейти на IDEATEL со своим номером</a>
+        <br>
+        <a href="#" class="rouming">Роуминг</a>
+        <a href="#" class="salonWithMap">125 салонов в 12 городах</a>
+      </div>
+      <div class="labeb">
+        <div class="button labeb">Подобрать тариф</div>
+      </div>
+    </div>
+
+    <div class="block news oneColumn fl_l margin_r">
+      <div class="title">Новости</div>
+      <div class="news">
+        <a href="news.html">IDEATEL приглашает в новый салон связи</a>
+        <a href="news.html">В IDEATEL начались продажи двух новых 4G-смартфонов Huawei – G8 и GR5</a>
+        <a href="news.html">Об изменении порядка налогообложения для абонентов</a>
+        <a href="news.html">Бонусные баллы для пользователей фиксированного интернета: IDEATEL расширяет свою программу лояльности</a>
+        <a href="news.html">Телеканал ТНТ теперь и в смартфоне абонентов IDEATEL</a>
+      </div>
+    </div>
+
+    <div class="block pay twoColumn fl_l">
+      <div class="title">Пополнение баланса</div>
+      <div class="pay phone_form">
+        <label>Номер телефона:</label>
+        <div class="group-input">
+          <label>+375</label>
+          <input type="tel" class="rfield" id="user_phone" placeholder="(52) ___ __ __" required>
+        </div>
+        <label>Сумма:</label>
+        <div class="group-label">
+          <input type="number" id="user_price" placeholder="50 000">
+          <span>руб.</span>
+        </div>
+
+        <div class="group-button">
+          <div class="button labeb" onclick="pay(); return false" class="btn_submit">Пополнить</div>
+          <div class="cardLogo"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </main>
+  <footer>
+    <div class="info">
+      © 2016 СООО «ИдеяТел», ул. Красноармейская, 24, 220030, г. Минск<br>УНП 190579561, Лицензия Министерства связи и информатизации РБ №02140/1315, срок действия не ограничен
+    </div>
+    <div class="copyright">
+      BUILD WITH LOVE BY TUGARIN
+    </div>
+  </footer>
+</body>
+</html>
