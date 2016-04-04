@@ -55,9 +55,8 @@ header {
   text-transform: uppercase;
   display: inline-block;
   width: 125px;
-}
-.logo > span {
-  color: white;
+  background: url("../img/logo.png") center center no-repeat;
+  text-indent: -9999px;
 }
 .topmenu {
   display: inline-block;
@@ -109,7 +108,7 @@ header {
   background: #78681a;
 }
 .dropmenu > .leftmenu > a {
-  color: #78681a;
+  color: #78681a !important;
   display: block;
   padding: 10px 15px;
   line-height: 20px;
@@ -118,7 +117,7 @@ header {
   background: #D8BE40;
 }
 .dropmenu > .leftmenu > a.active {
-  color: white;
+  color: white !important;
   background: #78681a;
 }
 .dropmenu > .showmenu {
@@ -131,7 +130,7 @@ header {
   font-size: 24px;
   margin: 10px 0;
   display: block;
-  color: #78681a;
+  color: #78681a !important;
 }
 .dropmenu > .showmenu > div > .title:not(:first-of-type) {
   margin-top: 25px;
@@ -140,7 +139,7 @@ header {
   margin-left: 25px;
 }
 .dropmenu > .showmenu > div > .submenu > a {
-  color: #78681a;
+  color: #78681a !important;
   font-size: 16px;
   font-family: 'Flexy';
   width: 45%;

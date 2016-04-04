@@ -1,0 +1,152 @@
+<html>
+<head>
+  <title>Animated HTML banner</title>
+  <meta charset="utf-8">
+  <link href="css/animate.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+    @font-face {
+      font-family: 'Flexy';
+      src: url('css/font/flexysans_new.ttf');
+    }
+    @font-face {
+      font-family: 'FlexyM';
+      src: url('css/font/flexysans-medium_new.ttf');
+    }
+    @font-face {
+      font-family: 'FlexyB';
+      src: url('css/font/flexysans-bold_new.ttf');
+    }
+    @font-face {
+      font-family: 'Reckoner';
+      src: url('css/font/Reckoner_Bold.ttf');
+    }
+    body {
+      font-family: 'FlexyM', sans-serif;
+      color: white;
+    }
+    a {
+      text-decoration: none;
+    }
+    .back {
+      width: 336px;
+      height: 280px;
+    }
+    .tablet {
+      background: url("img/tablet.png") center center no-repeat;
+      background-size: 115%;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .display {
+      background: #334f95;
+      position: absolute;
+      width: 264px;
+      height: 197px;
+      top: 41px;
+      left: 34px;
+      overflow: hidden;
+    }
+    .display > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+    .logo {
+      background: url("img/logo.png") center center no-repeat;
+    }
+    .display > div > * {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-align: center;
+      line-height: 197px;
+    }
+    .display > div > .top {
+      height: 50%;
+      position: absolute;
+    }
+    .display > div > .bottom {
+      height: 80%;
+      bottom: 0;
+      position: absolute;
+    }
+    .display > div > span {
+      font-size: 23px;
+    }
+    .yellow {
+      color: #f3d231;
+    }
+    .button {
+      background: #f3d231;
+      text-align: center;
+      cursor: pointer;
+      color: #78681a;
+      font-size: 23px;
+      width: 290px;
+      height: 60px;
+      padding: 5px 15px;
+      border-radius: 6px;
+    }
+    .tadaH:hover {
+      -webkit-animation-name: tada;
+      animation-name: tada;
+    }
+    .display .hover {
+      background: #334f95;
+      position: absolute;
+      width: 264px;
+      height: 197px;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      transition: all .3s;
+      display: none;
+      z-index: 10000;
+    }
+    .display:hover > div, .display:hover > div:not(.hover) > * {
+      animation-play-state: paused;
+      -webkit-animation-play-state: paused;
+    }
+    .display:hover .hover {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="back">
+    <div class="tablet">
+      <div class="display">
+        <div class="slideOutUp animated delay2">
+          <div class="logo bounceIn animated delay"></div>
+        </div>
+        <div class="slideInUp animated delay2">
+          <span class="bounceOut animated delay3">У нас низкие цены</span>
+        </div>
+        <div class="slideInUp animated delay3">
+          <span class="bounceOut animated delay4">Бесплатный интернет</span>
+        </div>
+        <div class="slideInUp animated delay4">
+          <span class="bounceOut animated delay5">Огромная сеть</span>
+        </div>
+        <div class="slideInUp animated delay5">
+          <span class="bounceOut animated delay6 yellow">ПРИСОЕДИНЯЙСЯ!</span>
+        </div>
+        <div class="slideInUp animated delay6">
+          <div class="logo top"></div>
+          <div class="bottom tadaH pulse animated infinite yellow">
+            <a href="index.html" target="_blank" class="button">ПОДКЛЮЧИТЬСЯ</a>
+          </div>
+        </div>
+        <div class="hover">
+          <div class="logo top"></div>
+          <div class="bottom tadaH pulse animated infinite yellow">
+            <a href="index.html" target="_blank" class="button">ПОДКЛЮЧИТЬСЯ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
