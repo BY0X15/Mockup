@@ -1,0 +1,194 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.wrap {
+  width: 1024px;
+  margin: 0px auto;
+}
+.fl_l {
+  float: left;
+}
+.fl_r {
+  float: right;
+}
+ul, li {
+  list-style: none;
+}
+.clearfix {
+  clear: both;
+}
+
+header {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 108px;
+}
+header .topmenu {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  height: 48px;
+}
+header .bottommenu {
+  height: 60px;
+}
+header .logo {
+  background: url("../img/logo.png") no-repeat center center;
+  width: 115px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .link {
+  color: white;
+  opacity: 0.9;
+  padding: 13px 0;
+  margin: 0 10px;
+  display: inline-block;
+  position: relative;
+  transition: all .3s;
+}
+header .link.dashed:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 1px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.9);
+}
+header .link:hover {
+  opacity: 0.65;
+}
+header .link.active {
+  color: #fff;
+  opacity: 1;
+}
+header .bottommenu {
+  font-size: 17px;
+}
+header .bottommenu .menu > ul > li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 10px;
+  position: relative;
+  transition: all .3s;
+  opacity: 0.9;
+}
+header .bottommenu .menu > ul > li:hover {
+  color: #ff5e5e;
+  opacity: 1;
+}
+header .bottommenu .menu > ul > li.dropmenu {
+  margin: 3px 20px;
+}
+header .bottommenu .menu > ul > li.dropmenu:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 3px 0 3px;
+  border-color: #b2b2b2 transparent transparent transparent;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transition: all .3s;
+}
+header .bottommenu .menu > ul > li:hover.dropmenu:after {
+  border-color: #ff5e5e transparent transparent transparent
+}
+
+#slider {
+  position: relative;
+}
+#slider:after {
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #e3e3e3;
+}
+#slider .pages > div {
+  display: none;
+  height: 380px;
+  overflow: hidden;
+}
+#slider .pages > div.active {
+  display: block;
+  position: relative;
+}
+#slider .pages > div > .label {
+  float: left;
+  margin: 70px 0 0 40px;
+}
+#slider .pages > div > .label > .title {
+  font-size: 45px;
+}
+#slider .pages > div > .label > .subtitle {
+  font-size: 25px;
+  width: 600px;
+}
+#slider .pages > div > .label > .link {
+  color: #ff5e5e;
+  font-size: 25px;
+  display: block;
+  position: absolute;
+  bottom: 150px;
+}
+#slider .pages > div > .label > .link:hover {
+  text-decoration: underline;
+}
+#slider .pages > div > .img {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#slider .pages > div > .img > img {
+  height: 100%;
+}
+#slider .tabs {
+  margin: 0 auto;
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#slider .tabs > span {
+  border-radius: 50%;
+  background: #e3e3e3;
+  opacity: 0.6;
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+#slider .tabs > span:hover {
+  opacity: 1;
+}
+#slider .tabs > span.active {
+  background: transparent;
+  border: 2px solid #ff5e5e;
+  width: 10px;
+  opacity: 1;
+  height: 10px;
+}
