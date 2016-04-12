@@ -84,7 +84,6 @@ header .bottommenu .menu > ul > li {
   display: inline-block;
   margin: 3px 10px;
   position: relative;
-  transition: all .3s;
   opacity: 0.9;
 }
 header .bottommenu .menu > ul > li:hover {
@@ -135,7 +134,7 @@ header .bottommenu .menu > ul > li:hover.dropmenu:after {
 }
 #slider .pages > div > .label {
   float: left;
-  margin: 70px 0 0 40px;
+  margin: 70px 0 0 15px;
 }
 #slider .pages > div > .label > .title {
   font-size: 45px;
@@ -166,9 +165,10 @@ header .bottommenu .menu > ul > li:hover.dropmenu:after {
 #slider .tabs {
   margin: 0 auto;
   width: 100px;
+  text-align: center;
   height: 20px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   right: 0;
 }
@@ -191,4 +191,129 @@ header .bottommenu .menu > ul > li:hover.dropmenu:after {
   width: 10px;
   opacity: 1;
   height: 10px;
+}
+
+.block {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.block > .title {
+  font-weight: normal;
+  text-align: center;
+}
+.four_column {
+  position: relative;
+}
+.four_column > a {
+  width: calc(100% / 4);
+  display: inline-block;
+  margin-left: -4px;
+  overflow: hidden;
+  list-style: none;
+  max-height: 200px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.four_column > a:hover {
+  transform: scale(1.1);
+  z-index: 10000;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+.block.tarif a.mblock:hover > .title, .block.tarif a.mblock:hover > .service {
+  color: #ff5e5e;
+  text-shadow: 0 0 5px #ff5e5e;
+}
+.four_column > a:first-of-type {
+  margin-left: 0;
+}
+.four_column > a:last-of-type {
+  margin-left: -5px;
+}
+.block.tarif .mblock {
+  height: 204px;
+  position: relative;
+}
+.block.tarif .mblock > .title, .block.tarif .mblock > .service {
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: hidden;
+  width: auto;
+  transition: all .3s;
+}
+.block.tarif .mblock > .title {
+  top: 30%;
+  font-size: 24px;
+}
+.block.tarif .mblock > .service {
+  bottom: 20px;
+  font-size: 17px;
+}
+.block.tarif .mblock > .img {
+  background: no-repeat center center;
+  background-size: 640px auto;
+  height: 200px;
+  width: auto;
+}
+.block.tarif .mblock > .img.block-img-1 {
+  background-image: url("../img/scroll-block-img-1.png");
+}
+.block.tarif .mblock > .img.block-img-2 {
+  background-image: url("../img/scroll-block-img-2.png");
+}
+.block.tarif .mblock > .img.block-img-3 {
+  background-image: url("../img/scroll-block-img-3.png");
+}
+.block.tarif .mblock > .img.block-img-4 {
+  background-image: url("../img/scroll-block-img-4.png");
+}
+
+.block.news > .menu {
+  text-align: center;
+}
+.block.news > .menu > a {
+  margin: 0 10px;
+}
+.block.news > .menu > a.active, .block.news > .content > .mblock:hover > .title {
+  color: #ff5e5e;
+}
+.block.news > .content > .mblock {
+  margin-top: 50px;
+  width: 250px;
+  display: inline-block;
+}
+.block.news > .content > .mblock > .date {
+  color: #666;
+  font-size: 13px;
+}
+.block.news > .content > .mblock > .title {
+  margin-top: 15px;
+  transition: all .3s;
+}
+.block.news > .content > .mblock > .desc {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  right: 0;
+  background: #f2f2f2;
+}
+footer .fl_l {
+  font-size: 12px;
+  color: #888;
+}
+footer .fl_r {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 0;
 }
