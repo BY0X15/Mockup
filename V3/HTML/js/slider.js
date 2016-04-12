@@ -2,6 +2,7 @@ var timSlider;
 $(document).ready(function(){
   var slider = $("#slider");
   //
+  $("#slider .wrap").append('<div class="tabs"></div>');
   $("#slider .pages").find("div.page").each(function(e){
     $("#slider .tabs").append('<span rel="'+e+'"></span>');
   });
