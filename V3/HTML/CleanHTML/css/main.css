@@ -28,6 +28,10 @@ ul, li {
 .clearfix {
   clear: both;
 }
+hr {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+}
 
 header {
   position: relative;
@@ -79,19 +83,29 @@ header .link.active {
 header .bottommenu {
   font-size: 17px;
 }
+header .bottommenu .menu > ul {
+  margin: 10px;
+}
 header .bottommenu .menu > ul > li {
   cursor: pointer;
   display: inline-block;
-  margin: 3px 10px;
+  padding: 10px;
+  border-radius: 3px;
   position: relative;
+  transition: all .3s;
   opacity: 0.9;
 }
-header .bottommenu .menu > ul > li:hover {
+header .bottommenu .menu > ul > li.dropmenu {
+  padding: 10px 20px 10px 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+header .bottommenu .menu > ul > li:hover,header .bottommenu .menu > ul > li.show {
   color: #ff5e5e;
   opacity: 1;
-}
-header .bottommenu .menu > ul > li.dropmenu {
-  margin: 3px 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 header .bottommenu .menu > ul > li.dropmenu:after {
   content: '';
@@ -100,7 +114,7 @@ header .bottommenu .menu > ul > li.dropmenu:after {
   border-style: solid;
   border-width: 4px 3px 0 3px;
   border-color: #b2b2b2 transparent transparent transparent;
-  right: -10px;
+  right: 10px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -109,6 +123,45 @@ header .bottommenu .menu > ul > li.dropmenu:after {
 }
 header .bottommenu .menu > ul > li:hover.dropmenu:after {
   border-color: #ff5e5e transparent transparent transparent
+}
+
+.dropmenu > .submenu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: calc(-590px / 2);
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: #333;
+  cursor: default;
+  z-index: 99;
+  padding: 30px 0px 30px 60px;
+  width: 650px;
+}
+.submenu.three_column > div {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+}
+.submenu .title {
+  font-size: 18px;
+}
+.submenu .content {
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+}
+.submenu a {
+  display: block;
+  transition: all .3s;
+  margin: 5px 0;
+}
+.submenu a:hover {
+  color: #ff5e5e;
+}
+.dropmenu:hover > .submenu {
+  display: block;
 }
 
 #slider {
@@ -297,6 +350,30 @@ header .bottommenu .menu > ul > li:hover.dropmenu:after {
   margin-top: 5px;
   font-size: 14px;
   color: #666;
+}
+
+.scrollbar {
+  color: #888;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.scrollbar > a {
+  transition: all .3s;
+}
+.scrollbar > a:hover {
+  color: #ff5e5e;
+}
+.news .desc {
+  width: 730px;
+  line-height: 1.5;
+  padding-bottom: 70px;
+}
+.news .date_news {
+  border: 1px dashed gray;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 25px;
+  line-height: 1.5;
 }
 
 footer {
