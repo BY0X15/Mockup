@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    overflow-x: hidden;
+}
+a {
+    color: #333333;
+}
+a:hover {
+    text-decoration: none;
+}
+.navbar-topmenu {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}
+.navbar-logo {
+    background: url("../img/logo.png") no-repeat center center;
+    width: 115px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fl_l {
+    float: left;
+}
+.fl_r {
+    float: right;
+}
+.navbar-topmenu {
+    height: 48px;
+}
+@media (max-width: 920px) {
+    .navbar-topmenu {
+        background: transparent;
+        height:auto;
+        margin-top: 10px;
+    }
+    .navbar-topmenu > div > div > * {
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2)    ;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2)    ;
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .navbar-topmenu > div > div > div > a {
+        margin: 15px !important;
+    }
+    .navbar-topmenu a.link {
+        color: #333333 !important;
+        opacity: 1 !important;
+    }
+    .navbar-topmenu a.link.active {
+        color: #ff5e5e !important;
+    }
+    .dashed:after {
+        border: 0 !important;
+    }
+    .navbar-topmenu .fl_r {
+        float: left !important;
+    }
+    .navbar-topmenu a {
+        display: block !important;
+    }
+    #navbar.collapse.in {
+        position: relative;
+        /*left: 15px;*/
+        /*right: 15px;*/
+        /*top:90px;*/
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
+    }
+    .menu .nav.navbar-nav > li:hover {
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important    ;
+        box-shadow: none !important    ;
+    }
+    .menu .nav.navbar-nav > li {
+        display: block !important;
+        width: 100% !important;
+        left:0;
+        right:0;
+    }
+    .menu .nav.navbar-nav > li:hover > .submenu {
+        display: none !important;
+    }
+    .menu.fl_r {
+        width: 100%;
+    }
+}
+
+@media (min-width: 920px) {
+    .collapse {
+        display: block !important;
+    }
+    .navbar-toggle {
+        display: none !important;
+    }
+}
+.navbar-topmenu a.link {
+    color: white;
+    position: relative;
+    opacity: .9;
+    display: inline-block;
+    margin: 5px 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s ;
+    -ms-transition: all .3s ;
+    -o-transition: all .3s ;
+    transition: all .3s ;
+}
+.dashed:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    border-bottom: 1px dashed;
+}
+.navbar-topmenu a.link:hover {
+    opacity: .65;
+}
+.navbar-topmenu a.link.active {
+    opacity: 1;
+}
+.menu .nav.navbar-nav {
+    margin: 10px;
+}
+.menu .nav.navbar-nav > li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    transition: all .3s;
+    opacity: 0.9;
+    color: #333333;
+    font-size: 17px;
+}
+.navbar-toggle {
+    display: inline-block;
+    float: right;
+}
+.menu .nav.navbar-nav > li:hover {
+    color: #ff5e5e;
+    opacity: 1;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.menu .nav.navbar-nav > li > .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: calc(-590px / 2);
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    cursor: default;
+    z-index: 99;
+    padding: 30px 0px 30px 60px;
+    width: 650px;
+}
+.menu .nav.navbar-nav > li:hover > .submenu {
+    display: block;
+}
+.navbar-submenu .container {
+    position: relative;
+}
+
+
+.navbar-toggle {
+    background: rgba(51,51,51,0.9);
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px 15px;
+    top: 0;
+    position: absolute;
+    right: 20px;
+}
+.navbar-toggle:before {
+    content: 'Меню';
+    color: white;
+}
+
+.submenu.three_column > div {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+.submenu.three_column > div {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+.submenu .title {
+    font-size: 18px;
+}
+.submenu .content {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+.submenu a {
+    display: block;
+    transition: all .3s;
+    margin: 5px 0;
+}
+.submenu a:hover {
+    color: #ff5e5e;
+}
+
+
+
+
+
+#slider {
+    position: relative;
+}
+#slider:after {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #e3e3e3;
+}
+#slider .pages > div {
+    display: none;
+    height: 380px;
+    overflow: hidden;
+}
+#slider .pages > div.active {
+    display: block;
+    position: relative;
+}
+#slider .pages > div > .labels {
+    float: left;
+    margin: 70px 0 0 15px;
+}
+#slider .pages > div > .labels > .title {
+    font-size: 45px;
+}
+#slider .pages > div > .labels > .subtitle {
+    font-size: 25px;
+    width: 600px;
+}
+#slider .pages > div > .labels > .link {
+    color: #ff5e5e;
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    bottom: 150px;
+}
+#slider .pages > div > .labels > .link:hover {
+    text-decoration: underline;
+}
+#slider .pages > div > .img {
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 380px;
+}
+#slider .pages > div > .img > img {
+    height: 100%;
+}
+#slider .tabs {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+#slider .tabs > span {
+    border-radius: 50%;
+    background: #e3e3e3;
+    opacity: 0.6;
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+#slider .tabs > span:hover {
+    opacity: 1;
+}
+#slider .tabs > span.active {
+    background: transparent;
+    border: 2px solid #ff5e5e;
+    width: 10px;
+    opacity: 1;
+    height: 10px;
+}
+
+
+.title.center {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.full-width {
+    position: absolute;
+    left:0;
+    right:0;
+}
+
+.row.tarif > div {
+    padding: 0;
+}
+
+.tarif .mblock {
+    display: block;
+    position: relative;
+}
+.tarif .mblock > .title, .tarif .mblock > .service {
+    color: #fff;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    width: auto;
+    transition: all .3s;
+}
+.tarif .mblock > .title {
+    top: 30%;
+    font-size: 24px;
+}
+.tarif .mblock > .service {
+    bottom: 20px;
+    font-size: 17px;
+}
+.tarif .mblock > .img {
+    background: no-repeat center center;
+    background-size: 640px auto;
+    height: 200px;
+    width: auto;
+}
+.tarif .mblock > .img.block-img-1 {
+    background-image: url("../img/scroll-block-img-1.png");
+}
+.tarif .mblock > .img.block-img-2 {
+    background-image: url("../img/scroll-block-img-2.png");
+}
+.tarif .mblock > .img.block-img-3 {
+    background-image: url("../img/scroll-block-img-3.png");
+}
+.tarif .mblock > .img.block-img-4 {
+    background-image: url("../img/scroll-block-img-4.png");
+}
+
+.news {
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+.news > .menu {
+    text-align: center;
+}
+.news > .menu > a {
+    margin: 0 10px;
+}
+.news > .menu > a.active, .news > .content > div > .mblock:hover > .title {
+    color: #ff5e5e;
+}
+.news > .content > div > .mblock {
+    margin-top: 50px;
+    width: 250px;
+    display: inline-block;
+}
+.news > .content > div > .mblock > .date {
+    color: #666;
+    font-size: 13px;
+}
+.news > .content > div > .mblock > .title {
+    margin-top: 15px;
+    transition: all .3s;
+}
+.news > .content > div > .mblock > .desc {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    right: 0;
+    background: #f2f2f2;
+}
+footer .fl_l {
+    font-size: 12px;
+    color: #888;
+}
+footer .fl_r {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 0;
+}
