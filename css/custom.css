@@ -1,0 +1,182 @@
+.topmenu {
+	height: 40px;
+	background: rgba(0,0,0,0.8);
+}
+.topmenu a {
+	color: white;
+}
+.topmenu a:hover {
+	text-decoration: none;
+}
+.topmenu a:hover:not(.active) {
+	color: #ff5e5e;
+}
+.topmenu a.active {
+	opacity: .7;
+	cursor: default;
+}
+.topmenu .container > div > a {
+	line-height: 39px;
+	margin: 0 10px;
+}
+.topmenu .container > div > a:first-of-type,
+.topmenu .container > div > a:last-of-type {
+	margin: 0;
+}
+
+.header .logo {
+	width: 200px;
+	height: 70px;
+	background: url("../img/logo.png");
+}
+.header-menu > li {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	padding: 0 15px;
+	margin: 15px 0;
+	cursor: pointer;
+	line-height: 40px;
+}
+.header-menu > li, .header-menu > li > a {
+	color: black;
+}
+.header-menu > li:hover ,
+.header-menu > li > a:hover,
+.header-menu > li:hover > a {
+	color: #ff5e5e;
+	text-decoration: none;
+}
+.header-menu > li > .dropmenu {
+	display: none;
+}
+.header-menu > li:hover > .dropmenu {
+	display: block;
+}
+.header-menu > li:hover {
+	color: #ff5e5e;
+	background: rgba(0,0,0,.8);
+}
+.header-menu > li > .dropmenu {
+	position: absolute;
+	background: rgba(0,0,0,.8);
+	width: 450px;
+	padding: 10px 20px;
+	z-index: 1000;
+}
+.header-menu > li > .dropmenu a {
+	color: white;
+	display: block;
+	font-size: 13px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.header-menu > li > .dropmenu a.head {
+	font-size: 17px;
+	margin-left: -10px;
+}
+.header-menu > li > .dropmenu a:hover {
+	text-decoration: none;
+	color: #ff5e5e;
+}
+.btn-link {
+	border: 1px solid #ff5e5e;
+	padding: 5 10px;
+	color: #ff5e5e;
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	display: block;
+}
+.btn-link:hover {
+	border: 1px solid #ff5e5e;
+	background: #ff5e5e;
+	text-decoration: none;
+	color: white;
+}
+#slider {
+	height: 400px;
+	position: relative;
+}
+#slider .page > .text {
+	margin: 100px 0;
+}
+#slider .page > .text > .title {
+	font-size: 40px;
+}
+#slider .page > .text > .desc {
+	font-size: 20px;
+}
+#slider .page > .text > .btn-link {
+	margin-bottom: 100px;
+	position: absolute;
+	bottom: 0;
+}
+#slider .page > .image {
+	float: right;
+	width: 400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#slider .page > .image > img {
+	height: 100%;
+}
+.slider.container-fluid {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+#slider .tabs {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 100px;
+    margin: 0 auto;
+}
+#slider .tabs > span {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: rgba(0,0,0,.7);
+	border-radius: 50%;
+	cursor: pointer;
+}
+#slider .tabs > span.active {
+	background: #ff5e5e;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ff5e5e;
+}
+@media (min-width: 992px) {
+	#bs-navbar.collapse {
+		display: block;
+	}
+}
+@media (max-width: 768px) {
+	#slider {
+		display: none;
+	}
+}
+@media (max-width: 992px) {
+	.navbar-toggle {
+		margin-top: -55px;
+		display: block;
+	}
+	.header-menu.pull-right {
+		float: left !important;
+		background: #e5e5e5;
+		width: 100%;
+		padding: 0 20px;
+	}
+	.header-menu .dropmenu {
+		display: none !important;
+	}
+	.header-menu > li {
+		display: block;
+	}
+}
